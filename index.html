@@ -492,98 +492,87 @@
     </section><!-- /Portfolio Section -->
 
     <!-- Services Section -->
-    <section id="services" class="services section">
+<section id="services" class="services section">
 
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Services</h2>
-        <p>I provide frontend-focused services aimed at building clean, responsive, and user-friendly static websites
-          using modern web technologies.</p>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="row gy-4">
-
-
-
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
-            <div class="icon flex-shrink-0"><i class="bi bi-briefcase"></i></div>
-            <div>
-              <h4 class="title"><a href="service-details.html" class="stretched-link">Static Website Development</a>
-              </h4>
-              <p class="description">Design and development of fast, responsive static websites using HTML, CSS, and
-                modern layout techniques.Includes Landing pages, Personal websites, Business brochure sites</p>
-            </div>
-          </div>
-          <!-- End Service Item -->
+  <!-- Section Title & Dynamic Filter Buttons -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Services</h2>
+    <p>I deliver clean, responsive frontend experiences paired with robust, secure full-stack backend solutions using modern web technologies.</p>
+    
+    <!-- Dynamic Isotope Filter Controls for Services -->
+<div class="row mt-2 mb-4" data-aos="fade-up" data-aos-delay="100">
+  <div class="col-12 text-center">
+    <ul class="service-filters portfolio-filters" style="list-style: none; padding: 0;">
+      <li class="filter-active" data-filter="*">All Services</li>
+      <li data-filter=".filter-frontend">Frontend Development</li>
+      <li data-filter=".filter-fullstack">Full-Stack & Backend</li>
+    </ul>
+  </div>
+</div>
 
 
+  <div class="container">
+    <!-- Note: Added class "isotope-container" or your script's row target to enable animated item filtering toggles -->
+    <div class="row gy-4 isotope-container">
 
-
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="200">
-            <div class="icon flex-shrink-0"><i class="bi bi-card-checklist"></i></div>
-            <div>
-              <h4 class="title"><a href="service-details.html" class="stretched-link">Responsive Web Design</a></h4>
-              <p class="description">Creating mobile-first, responsive layouts that adapt smoothly across devices and
-                screen sizes. Technologies- CSS Flexbox & Grid, Bootstrap, Tailwind CSS.</p>
-            </div>
-          </div><!-- End Service Item -->
-
-
-
-
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="300">
-            <div class="icon flex-shrink-0"><i class="bi bi-bar-chart"></i></div>
-            <div>
-              <h4 class="title"><a href="service-details.html" class="stretched-link">Frontend Interactivity (Basic
-                  DOM)</a></h4>
-              <p class="description">Adding basic interactivity using JavaScript and DOM manipulation. Examples-
-                Navigation toggles, Form validation.</p>
-            </div>
-          </div><!-- End Service Item -->
-
-
-
-
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="400">
-            <div class="icon flex-shrink-0"><i class="bi bi-binoculars"></i></div>
-            <div>
-              <h4 class="title"><a href="service-details.html" class="stretched-link">Website Redesign & Fixes</a></h4>
-              <p class="description">Improving existing static websites by fixing layout issues, responsiveness, and UI
-                inconsistencies.</p>
-            </div>
-          </div><!-- End Service Item -->
-
-
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="500">
-            <div class="icon flex-shrink-0"><i class="bi bi-brightness-high"></i></div>
-            <div>
-              <h4 class="title"><a href="service-details.html" class="stretched-link">Performance & Accessibility
-                  Basics</a></h4>
-              <p class="description">Optimizing static websites for faster load times and basic accessibility best
-                practices. Includes- Image optimization, Semantic HTML.</p>
-            </div>
-          </div><!-- End Service Item -->
-
-
-
-
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="600">
-            <div class="icon flex-shrink-0"><i class="bi bi-calendar4-week"></i></div>
-            <div>
-              <h4 class="title"><a href="service-details.html" class="stretched-link">Portfolio & Resume Websites</a>
-              </h4>
-              <p class="description">Creating personal portfolio or resume websites for students and entry-level
-                professionals.</p>
-            </div>
-          </div><!-- End Service Item -->
-
+      <!-- 1. Full-Stack Application Architecture (NEW backend category) -->
+      <div class="col-lg-4 col-md-6 service-item d-flex filter-fullstack" data-aos="fade-up" data-aos-delay="100">
+        <div class="icon flex-shrink-0"><i class="bi bi-layer-forward"></i></div>
+        <div>
+          <h4 class="title"><a href="service-details.html" class="stretched-link">Node.js Application Architecture</a></h4>
+          <p class="description">Designing clean server-side development systems using Node.js and Express. Fully engineered around modular MVC architecture patterns to cleanly isolate data routers from client-facing view modules.</p>
         </div>
+      </div><!-- End Service Item -->
 
-      </div>
+      <!-- 2. Secure Authentication Systems (NEW backend category) -->
+      <div class="col-lg-4 col-md-6 service-item d-flex filter-fullstack" data-aos="fade-up" data-aos-delay="200">
+        <div class="icon flex-shrink-0"><i class="bi bi-shield-lock"></i></div>
+        <div>
+          <h4 class="title"><a href="service-details.html" class="stretched-link">Secure User Authentication</a></h4>
+          <p class="description">Production-ready security pipelines built to safeguard user accounts. Implementing session states, JWT (JSON Web Tokens), robust password hashing algorithms with bcrypt, and dynamic role-based route parameters.</p>
+        </div>
+      </div><!-- End Service Item -->
 
-    </section><!-- /Services Section -->
+      <!-- 3. Admin Dashboards & Database Systems (NEW backend category) -->
+      <div class="col-lg-4 col-md-6 service-item d-flex filter-fullstack" data-aos="fade-up" data-aos-delay="300">
+        <div class="icon flex-shrink-0"><i class="bi bi-speedometer2"></i></div>
+        <div>
+          <h4 class="title"><a href="service-details.html" class="stretched-link">User Management Dashboards</a></h4>
+          <p class="description">Full-stack database applications built on MongoDB and Mongoose schemas. Features interactive admin layouts, strict data schemas, custom user search filters, and persistent account CRUD operations.</p>
+        </div>
+      </div><!-- End Service Item -->
+
+      <!-- 4. Static Website Development (Upgraded frontend category) -->
+      <div class="col-lg-4 col-md-6 service-item d-flex filter-frontend" data-aos="fade-up" data-aos-delay="400">
+        <div class="icon flex-shrink-0"><i class="bi bi-briefcase"></i></div>
+        <div>
+          <h4 class="title"><a href="service-details.html" class="stretched-link">Static Website Development</a></h4>
+          <p class="description">Design and development of clean, high-speed static interfaces. Tailored building of product landing pages, personal branding portfolios, UI platform replicas, and professional landing assets.</p>
+        </div>
+      </div><!-- End Service Item -->
+
+      <!-- 5. Responsive Web Design (Upgraded frontend category) -->
+      <div class="col-lg-4 col-md-6 service-item d-flex filter-frontend" data-aos="fade-up" data-aos-delay="500">
+        <div class="icon flex-shrink-0"><i class="bi bi-card-checklist"></i></div>
+        <div>
+          <h4 class="title"><a href="service-details.html" class="stretched-link">Responsive Web Design</a></h4>
+          <p class="description">Creating highly fluid, mobile-first responsive layout viewports matching contemporary standards across all display parameters. Mastered utilizing CSS Flexbox, Grid, Bootstrap frameworks, and Tailwind styling.</p>
+        </div>
+      </div><!-- End Service Item -->
+
+      <!-- 6. Interactivity & Optimization Framework (Consolidated hybrid category) -->
+      <div class="col-lg-4 col-md-6 service-item d-flex filter-frontend" data-aos="fade-up" data-aos-delay="600">
+        <div class="icon flex-shrink-0"><i class="bi bi-brightness-high"></i></div>
+        <div>
+          <h4 class="title"><a href="service-details.html" class="stretched-link">Interactivity & Optimization</a></h4>
+          <p class="description">Adding client-side dynamic controls using native JavaScript DOM event manipulation. Enforcing image compression strategies, clean tracking script optimization, and semantic HTML layouts for high accessibility standards.</p>
+        </div>
+      </div><!-- End Service Item -->
+
+    </div>
+  </div>
+
+</section><!-- /Services Section -->
 
 
     <!-- Contact Section -->

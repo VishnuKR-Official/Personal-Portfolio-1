@@ -227,3 +227,43 @@
   document.addEventListener('scroll', navmenuScrollspy);
 
 })();
+
+//isotop setting for toggle feature - service section
+
+document.addEventListener('DOMContentLoaded', function() {
+  // Initialize Isotope on the Services container
+  var servicesContainer = document.querySelector('#services .isotope-container');
+  
+  if (servicesContainer) {
+    // 1. Initialize Isotope Layout engine
+    var servicesIsotope = new Isotope(servicesContainer, {
+      itemSelector: '.service-item',
+      layoutMode: 'masonry',
+      filter: '*'
+    });
+
+    // 2. Handle Filter Button Click Events
+    var filterButtons = document.querySelectorAll('.service-filters li');
+    
+    filterButtons.forEach(function(button) {
+      button.addEventListener('click', function() {
+        // Remove active styling class from all siblings
+        filterButtons.forEach(btn => btn.classList.remove('filter-active'));
+        
+        // Add active styling class to clicked button
+        this.classList.add('filter-active');
+        
+        // Retrieve the filter selector target (e.g. .filter-frontend)
+        var filterValue = this.getAttribute('data-filter');
+        
+        // Trigger Isotope filtering layout transition
+        servicesIsotope.arrange({ filter: filterValue });
+        
+        // Trigger AOS animation refresh if it exists on your page
+        if (typeof AOS !== 'undefined') {
+          AOS.refresh();
+        }
+      });
+    });
+  }
+});
